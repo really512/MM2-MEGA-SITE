@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MM2 HUB — Mega Fan Site</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"></div>
+<header class="top">
+  <div class="brand">🔪 MM2 <span>HUB</span></div>
+  <nav>
+    <button data-page="home">Главная</button>
+    <button data-page="items">Предметы</button>
+    <button data-page="maps">Карты</button>
+    <button data-page="roles">Роли</button>
+    <button data-page="quiz">Квиз</button>
+  </nav>
+  <button id="theme" class="icon">🌙</button>
+</header>
+
+<main>
+<section id="home" class="page active">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">UNOFFICIAL MM2 FAN HUB</p>
+      <h1>Добро пожаловать в<br><b>MM2 HUB</b></h1>
+      <p class="sub">Большой фан-сайт про Murder Mystery 2: предметы, редкости, карты, роли и мини-игры.</p>
+      <div class="actions">
+        <button class="primary" data-page="items">Открыть коллекцию →</button>
+        <button class="secondary" id="randomHero">🎲 Случайный предмет</button>
+      </div>
+    </div>
+    <div class="knife-card"><div class="knife">🔪</div><div class="spark">✦</div></div>
+  </div>
+  <div class="stats">
+    <div><strong id="itemCount">0</strong><span>предметов в базе</span></div>
+    <div><strong>5</strong><span>основных разделов</span></div>
+    <div><strong>∞</strong><span>MM2 вайба</span></div>
+  </div>
+  <div class="grid2">
+    <article class="panel"><h2>🔥 Что здесь есть?</h2><p>Поиск по предметам, фильтры редкости, карточки ножей и пушек, информация о ролях, карты, рандомайзер и квиз.</p></article>
+    <article class="panel"><h2>⚠️ Важно</h2><p>Это фанатский сайт. Названия и данные в этой демо-версии можно расширять и исправлять.</p></article>
+  </div>
+</section>
+
+<section id="items" class="page">
+  <div class="section-head"><div><p class="eyebrow">COLLECTION</p><h1>Предметы</h1></div><button id="random" class="primary">🎲 Рандом</button></div>
+  <div class="toolbar">
+    <input id="search" placeholder="🔎 Поиск предмета...">
+    <select id="type"><option value="all">Все типы</option><option value="Knife">Ножи</option><option value="Gun">Пушки</option><option value="Pet">Питомцы</option></select>
+    <select id="rarity"><option value="all">Все редкости</option><option>Common</option><option>Uncommon</option><option>Rare</option><option>Legendary</option><option>Godly</option><option>Ancient</option><option>Chroma</option></select>
+  </div>
+  <div id="itemsGrid" class="items"></div>
+</section>
+
+<section id="maps" class="page">
+  <div class="section-head"><div><p class="eyebrow">LOCATIONS</p><h1>Карты</h1></div></div>
+  <div class="mapgrid" id="mapsGrid"></div>
+</section>
+
+<section id="roles" class="page">
+  <div class="section-head"><div><p class="eyebrow">ROUND</p><h1>Роли</h1></div></div>
+  <div class="roles">
+    <article class="role murderer"><div>🔪</div><h2>Murderer</h2><p>Главная опасность раунда. Цель — устранить остальных игроков.</p></article>
+    <article class="role sheriff"><div>🔫</div><h2>Sheriff</h2><p>Единственная роль с пистолетом. Может остановить убийцу.</p></article>
+    <article class="role innocent"><div>👤</div><h2>Innocent</h2><p>Обычный игрок: выжить, разобраться в происходящем и помочь команде.</p></article>
+    <article class="role hero"><div>⭐</div><h2>Hero</h2><p>Если Sheriff погибает, невиновный может подобрать пистолет и стать Hero.</p></article>
+  </div>
+</section>
+
+<section id="quiz" class="page">
+  <div class="quizbox">
+    <p class="eyebrow">MM2 KNOWLEDGE TEST</p><h1>🧠 MM2 Квиз</h1>
+    <div id="quizContent"></div>
+  </div>
+</section>
+</main>
+
+<div id="toast"></div>
+<footer>MM2 HUB • неофициальный фан-сайт • Сделано для фанатов Roblox Murder Mystery 2</footer>
+<script src="script.js"></script>
+</body>
+                                                                                           </html>
